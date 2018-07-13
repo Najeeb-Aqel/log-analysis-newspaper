@@ -23,7 +23,7 @@ Python 2.7 or hiher: You can download it from the official site - [Python Softwa
       * `select date(time) as fordate, count(*) as num into logbad from log where log.status='404 NOT FOUND' group by date(time) order by fordate;`
       * `select logTotal.fordate,((logbad.num* 1.00) / logTotal.num) * 100 as perc into percentageB from logTotal,logbad where logTotal.fordate=logbad.fordate group by perc,logTotal.fordate;`
 
-4. Run main.py: ` python main.py `
+4. Run news_tool.py: ` python news_tool.py `
 
 # Built With
 
