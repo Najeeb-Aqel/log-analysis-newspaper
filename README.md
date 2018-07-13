@@ -29,3 +29,13 @@ Python 2.7 or hiher: You can download it from the official site - [Python Softwa
 
 * [Vagrant](https://www.virtualbox.org/wiki/Downloads)
 * [Virtualbox](https://www.vagrantup.com/)
+
+# References
+
+* [UdacityCourse](https://classroom.udacity.com/nanodegrees/nd004/parts/8d3e23e1-9ab6-47eb-b4f3-d5dc7ef27bf0/modules/bc51d967-cb21-46f4-90ea-caf73439dc59/lessons/96869cfc-c67e-4a6c-9df2-9f93267b7be5/concepts/ffdd3161-2adb-4592-af11-62109c110ffd)
+* [SQL Count](https://www.w3schools.com/sql/sql_count_avg_sum.asp)
+* [Concatenation in sql](https://stackoverflow.com/questions/3828842/how-to-like-two-columns-in-one-sql-statement)
+* [operations in sql](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/d833b7bc-4909-473f-bfd7-9a53ea0ef8c3/evaluate-percentage-using-two-columns-of-a-table?forum=transactsql)
+
+
+
