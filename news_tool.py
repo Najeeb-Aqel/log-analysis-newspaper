@@ -17,7 +17,7 @@ query3 = ("select fordate, perc from percentageB where perc>1;")
 
 
 def printquery1(results):
-    print "The most popular three articles of all time are:"
+    print "1. What are the most popular three articles of all time?"
     for i, result in enumerate(results):
         print ("-" + result[0] + "--" + str(result[1]) + "views")
     print ("\n")
@@ -25,14 +25,14 @@ def printquery1(results):
 
 def printquery2(results):
 
-    print "The most popular article authors of all time are:"
+    print "2. Who are the most popular article authors of all time?"
     for i, result in enumerate(results):
         print ("-" + result[0] + "--" + str(result[1]) + "views")
     print ("\n")
 
 
 def printquery3(results):
-    print "The days where more than 1% of requests led to errors:"
+    print "3. On which days did more than 1% of requests lead to errors?"
     for i, result in enumerate(results):
         print (str(result[0]) + "\t" + str(result[1]) + "%")
     print ("\n")
