@@ -19,9 +19,9 @@ Python 2.7 or hiher: You can download it from the official site - [Python Softwa
 3. Run vagrant virtual machine: ` vagrant up `
 
 4. create the following tables:
-      * `select date(time) as fordate, count(*) as num into logTotal  from log  group by date(time) order by fordate;`
-      * `select date(time) as fordate, count(*) as num into logbad from log where log.status='404 NOT FOUND' group by date(time) order by fordate;`
-      * `select logTotal.fordate,((logbad.num* 1.00) / logTotal.num) * 100 as perc into percentageB from logTotal,logbad where logTotal.fordate=logbad.fordate group by perc,logTotal.fordate;`
+      * ` create view logTotal as select date(time) as fordate, count(*) as num  from log  group by date(time) order by fordate;`
+      * `  create view logbad as select date(time) as fordate, count(*) as num from log where log.status='404 NOT FOUND' group by date(time) order by fordate;`
+      * `  create view percentageB as select logTotal.fordate,((logbad.num* 1.00) / logTotal.num) * 100 as perc from logTotal,logbad where logTotal.fordate=logbad.fordate group by perc,logTotal.fordate;`
 
 4. Run news_tool.py: ` python news_tool.py `
 
